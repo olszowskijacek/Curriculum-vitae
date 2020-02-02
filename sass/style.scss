@@ -26,13 +26,17 @@ body {
         grid-gap: 3px;
         .content-title {
             grid-column: 1 / span 2;
-            border: 1px solid red;
+            // border: 1px solid red;
+            border-bottom: 2px solid grey;
             font-size: 1.3rem;
             font-weight: bold;
-            height: 25px;
+            
         }
-        div {
-            border: 1px solid green;
+        h2 {
+            margin: 0;
+        }
+        .footer {
+            grid-column: 1 / span 2;
         }
     }
 }
@@ -40,17 +44,41 @@ body {
     color: $headerColor;
     background-color: $headerColorBgc;
     text-align: center;
-    width: 100%;
+    width: 80vw;
+    height: 70px;
     margin: auto;
-    // position: fixed;
+    position: fixed;
+    align-content: center;
 }
 .about {
-    background-color: grey;
+    margin-top: 75px;
+    background-color: $sidebarBgc;
     padding: 3px;
+    height: calc(100vh - 81px);
+    min-width: 210px;
+    position: fixed;
+    width: 19%;
     .photo img {
         width: 100%;
     }
+    .contact h2 {
+        margin: 0;
+    }
+    .contact p, h3 {
+        margin: 5px 0;
+    }
+    .skills p {
+        margin: 5px 0;
+    }
 }
 .content {
-    border: 1px solid red;
+    margin-top: 75px;
+    // border: 1px solid red;
+}
+
+.footer {
+    background-color: lightgrey;
+    text-align: justify;
+    padding: 0 10px;
+    font-size: 16px;
 }

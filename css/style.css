@@ -49,34 +49,67 @@ body {
   -ms-grid-column-span: 2;
   -ms-grid-column: 1;
       grid-column: 1 / span 2;
-  border: 1px solid red;
+  border-bottom: 2px solid grey;
   font-size: 1.3rem;
   font-weight: bold;
-  height: 25px;
 }
 
-.wrapper .box-content div {
-  border: 1px solid green;
+.wrapper .box-content h2 {
+  margin: 0;
+}
+
+.wrapper .box-content .footer {
+  -ms-grid-column-span: 2;
+  -ms-grid-column: 1;
+      grid-column: 1 / span 2;
 }
 
 .header {
   color: #f5f6fa;
   background-color: #2c3e50;
   text-align: center;
-  width: 100%;
+  width: 80vw;
+  height: 70px;
   margin: auto;
+  position: fixed;
+  -ms-flex-line-pack: center;
+      align-content: center;
 }
 
 .about {
-  background-color: grey;
+  margin-top: 75px;
+  background-color: #a4b0be;
   padding: 3px;
+  height: calc(100vh - 81px);
+  min-width: 210px;
+  position: fixed;
+  width: 19%;
 }
 
 .about .photo img {
   width: 100%;
 }
 
+.about .contact h2 {
+  margin: 0;
+}
+
+.about .contact p, .about h3 {
+  margin: 5px 0;
+}
+
+.about .skills p {
+  margin: 5px 0;
+}
+
 .content {
-  border: 1px solid red;
+  margin-top: 75px;
+}
+
+.footer {
+  background-color: lightgrey;
+  text-align: justify;
+  padding: 0 10px;
+  font-size: 16px;
 }
 /*# sourceMappingURL=style.css.map */

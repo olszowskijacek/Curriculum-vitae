@@ -1,0 +1,56 @@
+@import "./settings.scss";
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 80vw;
+    margin: auto;
+}
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 10px;
+    .box-header{
+        grid-column: 1 / span 4;
+    }
+    .box-aside {
+        grid-column: 1 / span 1;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 3px;
+    }
+    .box-content {
+        grid-column: 2 / span 3;
+        display: grid;
+        grid-template-columns: 1fr 4fr;
+        grid-gap: 3px;
+        .content-title {
+            grid-column: 1 / span 2;
+            border: 1px solid red;
+            font-size: 1.3rem;
+            font-weight: bold;
+            height: 25px;
+        }
+        div {
+            border: 1px solid green;
+        }
+    }
+}
+.header {
+    color: $headerColor;
+    background-color: $headerColorBgc;
+    text-align: center;
+    width: 100%;
+    margin: auto;
+    // position: fixed;
+}
+.about {
+    background-color: grey;
+    padding: 3px;
+    .photo img {
+        width: 100%;
+    }
+}
+.content {
+    border: 1px solid red;
+}
